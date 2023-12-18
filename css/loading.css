@@ -1,0 +1,55 @@
+.panel {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f9f9f9;
+}
+
+.overlay {
+    position: relative;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.panel-title {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.panel-body {
+    margin-top: 10px;
+}
+
+/* Styles for the payment response element */
+#paymentResponse {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f0f8ff; /* Light blue background color */
+    color: #333;
+}
+
+/* Styles for the PayPal button container */
+#paypal-button-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Styles for the PayPal button (assuming it's an iframe or similar) */
+#paypal-button-container iframe {
+    border: none; /* Remove iframe border */
+    width: 150px; /* Adjust width as needed */
+    height: 40px; /* Adjust height as needed */
+}
+
+
+.hidden {
+    display: none;
+}
+
+/* Add additional styles as needed */
