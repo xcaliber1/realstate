@@ -278,7 +278,11 @@ require_once 'dbConfig.php';
                                     <div id="paymentResponse" class="hidden"></div>
                                     
                                     <!-- Set up a container element for the button -->
+                                    <?php if($row['status'] == "available"){ ?>
                                     <div id="paypal-button-container"></div>
+                                    <?php }else{?>
+                                        <h2>Not Available</h2>
+                                    <?php }?>
                                 </div>
                             </div>
 
