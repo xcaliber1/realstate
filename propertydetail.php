@@ -276,6 +276,7 @@ require_once 'dbConfig.php';
                                 <div class="panel-body">
                                     <!-- Display status message -->
                                     <div id="paymentResponse" class="hidden"></div>
+<<<<<<< HEAD
 
                                     <?php if($row['status'] == "available"){?>
                                         <?php if(isset($_SESSION['uemail'])){ ?>
@@ -287,6 +288,15 @@ require_once 'dbConfig.php';
                                     <?php } else{?>
                                         <h2>Not Available</h2>
                                     <?php } ?>
+=======
+                                    
+                                    <!-- Set up a container element for the button -->
+                                    <?php if($row['status'] == "available"){ ?>
+                                    <div id="paypal-button-container"></div>
+                                    <?php }else{?>
+                                        <h2>Not Available</h2>
+                                    <?php }?>
+>>>>>>> 4b9b573b9d23b0a85857cad73b046fdfcf646349
                                 </div>
                             </div>
 
