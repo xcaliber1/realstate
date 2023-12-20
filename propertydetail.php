@@ -276,9 +276,17 @@ require_once 'dbConfig.php';
                                 <div class="panel-body">
                                     <!-- Display status message -->
                                     <div id="paymentResponse" class="hidden"></div>
-                                    
-                                    <!-- Set up a container element for the button -->
-                                    <div id="paypal-button-container"></div>
+
+                                    <?php if($row['status'] == "available"){?>
+                                        <?php if(isset($_SESSION['uemail'])){ ?>
+                                        <!-- Set up a container element for the button -->
+                                        <div id="paypal-button-container"></div>
+                                        <?php } else { ?>
+                                            <h3 class="panel-title"><a href="login.php">Login</a> to make a reservation</h3>
+                                        <?php }?>
+                                    <?php } else{?>
+                                        <h2>Not Available</h2>
+                                    <?php } ?>
                                 </div>
                             </div>
 
